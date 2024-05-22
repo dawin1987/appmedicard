@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>HTML</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <title>Reporte para Imprimir</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            h1, p {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 <body>
-  <p>Esta página web es una página HTML válida.</p>
+    <h1>Reporte de Datos</h1>
+    <p>Nombre: <span id="param1"></span></p>
+    <p>Teléfono: <span id="param2"></span></p>
+    <script>
+        // Captura los parámetros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('param1').textContent = urlParams.get('param1');
+        document.getElementById('param2').textContent = urlParams.get('param2');
+
+        // Activar impresión automáticamente
+        window.onload = function() {
+            window.print();
+        };
+    </script>
 </body>
 </html>
