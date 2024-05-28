@@ -11,7 +11,7 @@ body {
     height: 95px;
     margin: 5px auto;
     padding: 10px;
-    background: #aed6f1;
+    background: #fff;
     
 }
 
@@ -47,12 +47,12 @@ img
 
 h1 {
     text-align: center;
-    color: #154360;
+    color: #09375D;
     text-transform: uppercase;
 }
 h2 {
     text-align: center;
-    color: red;
+    color: #09375D;
     text-transform: uppercase;
 }
 
