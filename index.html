@@ -1,29 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reporte para Imprimir</title>
-    <style>
-        @media print {
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }
-            h1, p {
-                page-break-inside: avoid;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Paciente</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <h1>Reporte de Datos</h1>
-    <p>Nombre: <span id="param1"></span></p>
-    <p>Teléfono: <span id="param2"></span></p>
+    <div class="container">
+        <h1>RECORD DE PACIENTE</h1>
+	<p><label>USUARIO:</label> <span id="usuario">---</span></p>
+        <div class="section">
+            <label>CENTRO:</label>
+            <span>HOSPITAL MUNICIPAL DE CEVICOS</span>
+
+        </div>
+
+        <div class="section">
+            <label>FECHA DE REGISTRÓ:</label>
+            <span id="fechaRegistro">___________</span>
+        </div>
+        <div class="section">
+            <label>NÚMERO DE RECORD:</label>
+            <span id="numeroRecord">___________</span>
+        </div>
+        <div class="section">
+            <label>CÉDULA:</label>
+            <span id="cedula">___________</span>
+        </div>
+        <div class="section">
+            <label>NOMBRE:</label>
+            <span id="nombre">___________</span>
+        </div>
+        <div class="section">
+            <label>NACIONALIDAD:</label>
+            <span id="nacionalidad">___________</span>
+        </div>
+        <div class="section">
+            <label>SEXO:</label>
+            <span id="sexo">___________</span>
+        </div>
+        <div class="section">
+            <label>FECHA DE NACIMIENTO:</label>
+            <span id="fechaNacimiento">___________</span>
+        </div>
+        <div class="section">
+            <label>EDAD:</label>
+            <span id="edad">___________</span>
+        </div>
+        <div class="section">
+            <label>NO. TELEFÓNICO:</label>
+            <span id="telefono">___________</span>
+        </div>
+        <div class="section">
+            <label>DIRECCIÓN:</label>
+            <span id="direccion">___________</span>
+        </div>
+        <div class="section">
+            <label>NOMBRE Y APELLIDO DEL PADRE:</label>
+            <span id="padre">___________</span>
+        </div>
+        <div class="section">
+            <label>NOMBRE Y APELLIDO DE LA MADRE:</label>
+            <span id="madre">___________</span>
+        </div>
+        <div class="section">
+            <label>SEGURO MÉDICO:</label>
+            <span id="seguro">___________</span>
+        </div>
+        <div class="section">
+            <label>NSS:</label>
+            <span id="nss">___________</span>
+        </div>
+        <div class="section">
+            <label>Observaciones:</label>
+            <div class="textarea" id="observaciones">___________________
+                ___________________
+            </div>
+        </div>
+    </div>
+
     <script>
         // Captura los parámetros de la URL
         const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById('param1').textContent = urlParams.get('param1');
-        document.getElementById('param2').textContent = urlParams.get('param2');
+	document.getElementById('usuario').textContent = urlParams.get('usuario');
+        document.getElementById('fechaRegistro').textContent = urlParams.get('fechaRegistro') || '___________';
+        document.getElementById('numeroRecord').textContent = urlParams.get('numeroRecord') || '___________';
+        document.getElementById('cedula').textContent = urlParams.get('cedula') || '___________';
+        document.getElementById('nombre').textContent = urlParams.get('nombre') || '___________';
+        document.getElementById('nacionalidad').textContent = urlParams.get('nacionalidad') || '___________';
+        document.getElementById('sexo').textContent = urlParams.get('sexo') || '___________';
+        document.getElementById('fechaNacimiento').textContent = urlParams.get('fechaNacimiento') || '___________';
+        document.getElementById('edad').textContent = urlParams.get('edad') || '___________';
+        document.getElementById('telefono').textContent = urlParams.get('telefono') || '___________';
+        document.getElementById('direccion').textContent = urlParams.get('direccion') || '___________';
+        document.getElementById('padre').textContent = urlParams.get('padre') || '___________';
+        document.getElementById('madre').textContent = urlParams.get('madre') || '___________';
+        document.getElementById('seguro').textContent = urlParams.get('seguro') || '___________';
+        document.getElementById('nss').textContent = urlParams.get('nss') || '___________';
+        document.getElementById('observaciones').textContent = urlParams.get('observaciones') || '__________________\n__________________';
 
         // Activar impresión automáticamente
         window.onload = function() {
