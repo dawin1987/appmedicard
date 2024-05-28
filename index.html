@@ -58,11 +58,11 @@
         </div>
         <div class="section">
             <label>NOMBRE Y APELLIDO DEL PADRE:</label>
-            <span id="padre">___________</span>
+            <span id="padre">---N/A---</span>
         </div>
         <div class="section">
             <label>NOMBRE Y APELLIDO DE LA MADRE:</label>
-            <span id="madre">___________</span>
+            <span id="madre">---N/A---</span>
         </div>
         <div class="section">
             <label>SEGURO MÉDICO:</label>
@@ -98,7 +98,7 @@
         document.getElementById('madre').textContent = urlParams.get('madre') || '___________';
         document.getElementById('seguro').textContent = urlParams.get('seguro') || '___________';
         document.getElementById('nss').textContent = urlParams.get('nss') || '___________';
-        document.getElementById('observaciones').textContent = urlParams.get('observaciones') || '__________________\n__________________';
+        document.getElementById('observaciones').textContent = urlParams.get('observaciones') || '---N/A--- \n ---N/A---';
 
         // Activar impresión automáticamente
         window.onload = function() {
