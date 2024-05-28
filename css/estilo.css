@@ -18,11 +18,13 @@ body {
 
 .section1{
     margin-bottom: 20px;
+    width: 50%;
+    height: 50px;
 }
 img 
 {
-    width: 50%;
-    height: 100px;
+    width: 10%;
+    height: 50px;
 }
 .container {
     max-width: 800px;
