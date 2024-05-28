@@ -9,15 +9,20 @@ body {
 .container1 {
     max-width: 800px;
     height: 100px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 10px;
     background: red;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     page-break-after: always;
 }
 
 .section1{
     margin-bottom: 20px;
+}
+img 
+{
+    width: 50%;
+    height: 100px;
 }
 .container {
     max-width: 800px;
