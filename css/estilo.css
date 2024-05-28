@@ -5,6 +5,20 @@ body {
     padding: 0;
 }
 
+
+.container1 {
+    max-width: 800px;
+    height: 100px;
+    margin: 50px auto;
+    padding: 10px;
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    page-break-after: always;
+}
+
+.section1{
+    margin-bottom: 20px;
+}
 .container {
     max-width: 800px;
     margin: 50px auto;
