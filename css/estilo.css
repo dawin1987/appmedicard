@@ -8,17 +8,27 @@ body {
 
 .container1 {
     max-width: 800px;
-    height: 100px;
-    margin: 20px auto;
+    height: 95px;
+    margin: 5px auto;
     padding: 10px;
-    background: red;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    page-break-after: always;
+    background: #aed6f1;
+    
 }
 
 .section1{
     max-width: 800px;
-    height: 100px;
+    height: 80px;
+display: inline-block;
+     
+}
+
+.section2{
+    max-width: 400px;
+    height: 17px;
+display: inline-block;
+padding: 10px;
+margin: 5px auto;
+   
      
 }
 img 
@@ -37,7 +47,7 @@ img
 
 h1 {
     text-align: center;
-    color: red;
+    color: #154360;
     text-transform: uppercase;
 }
 h2 {
