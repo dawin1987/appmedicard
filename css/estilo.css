@@ -4,8 +4,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
+.textHMC
+{
+    font-family: Arial, sans-serif;
+     color: #09375D;
+    font-weiht: bold;
+}
 .container1 {
     max-width: 800px;
     height: 95px;
