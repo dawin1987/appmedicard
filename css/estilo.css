@@ -6,44 +6,53 @@ body {
 }
 .textHMC
 {
+
     font-family: Arial, sans-serif;
      color: #09375D;
-    font-weiht: bold;
+    font-weight: bold;
+    font-size: 140%;
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
+    border-top: 1px solid #000;
+    border-left: 10px solid #000;
+    border-right: 10px solid #000;
 }
 .container1 {
     max-width: 800px;
-    height: 95px;
-    margin: 5px auto;
+    height: 100px;
+    margin: 10px auto;
     padding: 10px;
-    background: #fff;
-    
+    background: #ffffff;
+    display: flex;
 }
 
 .section1{
-    max-width: 800px;
-    height: 80px;
-display: inline-block;
-     
+    width: 29%;
+    height: 94px;
+    display:inline-block;
+    background: #ffffff; 
+margin-top: 5px;
 }
 
-.section2{
-    max-width: 400px;
-    height: 17px;
-display: inline-block;
-padding: 10px;
-margin: 5px auto;
-   
-     
+.section2 {
+font-weight: bold;
+width: 53%;
+height: 80px;
+display:inline-block;
+padding: 0px;
+background: #ffffff;
+margin-top:29px;
 }
 img 
 {
+   
     width: 200px;
     height: 100px;
 }
 .container {
     max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 35px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     page-break-after: always;
@@ -58,22 +67,23 @@ h2 {
     text-align: center;
     color: #09375D;
     text-transform: uppercase;
+    
 }
 
 .section {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 label {
     display: inline-block;
-    width: 200px;
+    width: 230px;
     font-weight: bold;
 }
 
 span {
     display: inline-block;
-    width: calc(100% - 220px);
-    border-bottom: 1px solid #000;
+    width: calc(100% - 245px);
+   /* border-bottom: 1px solid #000;*/
 }
 
 .textarea {
