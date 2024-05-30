@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Paciente</title>
-	 <link rel="icon" href="img/logo_icono">
+    <title>Registro AppMedicaRD</title>
+	 <link rel="icon" href="img/logo_icono.png">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -13,37 +13,36 @@
 	
               <div class="section1">
             <img src="img/logohmc.png">
-
+        </div>
 <div class="section2">
 <p>C/Principal S/N, Sabana del Maricao, Cevicos – RD
-Email: hospitalcevicos@gmail.com
-Tel.: 809-585-0004</p>
+Email: hospitalcevicos@gmail.com. Tel.: 809-585-0004</p>
 </div>
-
-<h1>--------------------------***--------------------------</h1>
-             </div>  
+             
         </div>
 		 
     <div class="container">
+        <h2>CENTRO:</h2>
+        <h2 class="textHMC">HOSPITAL MUNICIPAL DE CEVICOS</h2>
+        <h2 class="textHMCC">------------------------- - - - *** - - - -------------------------</h2>
         <h1>RECORD DE PACIENTE</h1>
 	        <div class="section">
-            <label>CENTRO:</label>
-            <span class="textHMC">HOSPITAL MUNICIPAL DE CEVICOS</span>
+            
 
         </div>
 
         <div class="section">
             <label>NÚMERO DE RECORD:</label>
-            <span id="numeroRecord">___________</span>
+            <span id="numeroRecord"></span>
         </div>
         
         <div class="section">
             <label>NOMBRE:</label>
-            <span id="nombre">___________</span>
+            <span id="nombre">--</span>
         </div>
         <div class="section">
             <label>NACIONALIDAD:</label>
-            <span id="nacionalidad">___________</span>
+            <span id="nacionalidad">--</span>
         </div>
 	    
         <div class="section">
@@ -92,7 +91,7 @@ Tel.: 809-585-0004</p>
         </div>
         <div class="section">
 <p><label>USUARIO:</label> <span id="usuario">---</span></p>
-		<p>---------------------------------------------------------------*------------------------------------------------------------------:</p>
+		<p>----------------------------------------------------------*-------------------------------------------------------------:</p>
 <p>...AppMedicaRD...</p>
             <label>Observaciones:</label>
             <div class="textarea" id="observaciones">___________________
@@ -119,7 +118,7 @@ Tel.: 809-585-0004</p>
         document.getElementById('madre').textContent = urlParams.get('madre') || '---N/A---';
         document.getElementById('seguro').textContent = urlParams.get('seguro') || '___________';
         document.getElementById('nss').textContent = urlParams.get('nss') || '___________';
-        document.getElementById('observaciones').textContent = urlParams.get('observaciones') || '____________________________________________________________________ \n _____________________________________________________________________';
+        document.getElementById('observaciones').textContent = urlParams.get('observaciones') || '___________________________________________________________ \n ___________________________________________________________';
 
         // Activar impresión automáticamente
         window.onload = function() {
@@ -128,4 +127,3 @@ Tel.: 809-585-0004</p>
     </script>
 </body>
 </html>
-
